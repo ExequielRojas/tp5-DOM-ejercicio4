@@ -4,11 +4,11 @@ function fecha(){
     const diaDeSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
     const mesesDelanio = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
-    const nombreDelDia = diaDeSemana[fechaActual.getDay()];
-    const nombreDelMes = mesesDelanio[fechaActual.getMonth()];
+    const dia = diaDeSemana[fechaActual.getDay()];
+    const mes = mesesDelanio[fechaActual.getMonth()];
     const anio = fechaActual.getFullYear();
 
-    fecha.textContent = `${nombreDelDia} ${fechaActual.getDate()} de ${nombreDelMes} del ${anio}`
+    fecha.textContent = `${dia} ${fechaActual.getDate()} de ${mes} del ${anio}`
 }
 
 function hora(){
